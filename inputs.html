@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML inputs </title>
+</head>
+<body>
+  <h1>HTML INPUT</h1>
+<form>
+  <p>
+
+    <!-- <input type="text" -->
+  <label>
+    Enter your address:
+  </label>
+
+  <input  id="name" type="text" />
+<br />
+
+<!-- input type ="button" -->
+<label>
+  Do you have a valid ID card?
+</label>
+<input type="button" value="yes" />
+<input type="button" value="no" />
+</p>
+
+<!-- input type="checkbox" -->
+<label for="dailyemail">
+  Suscribe to daily email?
+</label>
+<input type="checkbox" id="dailyemail" value="emailnewsletter" name="Suscribe"  />
+
+<br />
+<!-- input type="color" -->
+<label for="colorwell">
+  Select a background color:
+</label>
+<input  type="color" value="#411515" id="colorWell" name="background color">
+<input />
+
+<br />
+<!-- input type="date" -->
+<label for="bdaydate">
+  Choose your birthday date:
+</label>
+<input type="date" value="2020-10-12" id="bdaydate" name="bday" />
+
+<!-- input type="datetime"
+<input> elements of type datetime-local create input controls that let the user easily enter both a date and a time,
+ including the year, month, and day as well as the time in hours and minutes. -->
+<label for="meeting time">
+  Select preferred meeting time:
+</label>
+<input type="datetime-local" id="meeting time" name="meeting date and time" value="2020-10-23T10:30" />
+
+<!-- input type="email"
+<input> elements of type email are used to let the user enter and edit an e-mail address,
+ or, if the multiple attribute is specified, a list of e-mail addresses.
+-->
+<br />
+<label for="emailaddress">
+  Enter your email address:
+</label>
+<input type="email" id="emailaddress" value="geraldi124@yahoo.com" size="30" minlength="3" maxlength="20"multiple/>
+
+<br />
+<!-- input type="file"
+<input /> elements of type file are used to let users select one or more files from their device storage-->
+<label for="profilepicture">
+Insert a profile picture:
+</label>
+<input type="file" id="profilepicture" accept="image/*, .pdf"/>
+
+<!--input type="hidden"
+A control value that is hidden but the value is always submitted to the server-->
+<br />
+<label>
+  Hidden input type
+  <input type="hidden" name="ID" value="fjnfjds" />
+</label>
+
+<!-- input type="image"
+They are elements of type image that are used to create a graphical submit button.
+A graphical submit button are buttons that take the form of an image-->
+<br />
+<label for="emailaddress">
+  Enter your email address:
+</label>
+<input type="email" id="emailaddress" value="geraldi124@yahoo.com" size="30" minlength="3" maxlength="20"multiple/>
+
+
+
+<label for="image">
+</label>
+<input id="image" type="image" width="100" height="30" alt="Login" src="https://raw.githubusercontent.com/mdn/learning-area/master/html/forms/image-type-example/login.png"/>
+</label>
+
+<!-- input type="month"
+They are elements of type month that are used to allow user to enter month and year-->
+<br />
+<label for="birthdaymonth">
+Enter your birthday month:
+</label>
+<input  id="birthdaymonth" name="birthday" type="month"/>
+
+
+<!-- input type="number" They are elements of type number that allow user to enter number -->
+<br />
+<label for="ticketnum">
+  Number of movie tickets you would like to buy:
+</label>
+<input id="ticketnum" type="number" name="movieticket" value="0" />
+
+<!-- input type="password" They are elements of type password that allow the user to securely enter a password -->
+<br />
+<label for="userpassword">Password:</label>
+<input id="userpassword" type="password" />
+
+
+<!-- input type="radio"
+<input> elements of type radio are generally used in radio groups—collections of radio buttons describing a set of related options.
+ Only one radio button in a given group can be selected at the same time. -->
+ <br />
+ <label for="contactchoice1">Email </label>
+ <input type="radio" id="contactchoice1" name="contact" value="email" checked/>
+
+ <label for="contactchoice2">Phone</label>
+ <input type="radio" id="contactchoice2" name="contact" value="phone"/>
+
+ <label for="contactchoice3">Mail</label>
+ <input type="radio" id="contactchoice3" name="contact" value="Mail"/>
+
+<!--input type="range"
+<input /> elements of type range allows the user to select a value that is not less than a given value or more than a given value-->
+<br />
+<label for="audiovolume">Audio</label>
+ <input id="audiovolume" type="range" max="1000" min="50"/>
+
+ <!-- input type="reset"
+ <input> elements of type reset are rendered as buttons, with a default click event handler that resets all of the inputs in the form to their initial values.
+ -->
+ <br />
+ <label for="UserID">USERID</label>
+ <input id="UserID" type="password" />
+ <input id="UserID" type="reset" value="reset"/>
+
+ <!-- input type="search"
+<input> elements of type search are text fields designed for the user to enter search queries into.-->
+<br />
+<input type="search" name="q"/>
+<button>Search</button>
+
+<!-- input type="submit"-->
+<br />
+<label for="submitbutton">Enter surname:</label>
+<input id="submitbutton" name="text" type="submit" value="send"/>
+
+<!-- input type="tel"
+<input /> elements of type tel are used to let the user enter and edit telephone numbers -->
+<br />
+<label for="TelNo">PhoneNum:</label>
+<input id="TelNo" type="tel" name="telno" placeholder="123-234-567-34"/>
+
+<!-- input type="time" elements of type time are used to let the user enter time -->
+<br />
+<label for="studytime">Choose a study time</label>
+<input id="studytime" type="time" name="studtime"/>
+
+<!-- input type="url" -->
+<br />
+<label for="myUrl">Enter URL</label>
+<input id="myUrl" type="url" name="myurl"/>
+
+<!-- input type="week"-->
+<label for="week">What week would you like to start?</label>
+  <input id="week" type="week" name="week">
+</form>
+</body>
+</html>
